@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="hashset.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload=function(){
+                set= new HashSet();
+                //We're going to demonstrate multiple values per key
+                for(var i=0;i<500;i++){
+                    set.add(i, i+1);
+                }
+                for(var i=250;i<750;i++){
+                    set.add(i, i+1);
+                }
+                while(set.hasNext()){
+                    document.getElementById("output").innerHTML=
+                        document.getElementById("output").innerHTML+"<br />"+
+                        set.next();//returns an array of all values for the next item
+                }
+                
+            }
+        </script>
+
+        <div id="output"></div>
+    </body>
+</html>
