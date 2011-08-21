@@ -1,8 +1,8 @@
 About
 =====
- An implementation of a HashSet which supports multiple values per key, 
+ An implementation of a Set which supports multiple values per key, 
  sorting and iteration over elements without knowing any of the keys!
- (Not technically a "hashed" set just yet...
+ (Not technically a "hashed" set just yet, but possibly in the near future)...
 
 Features
 --------
